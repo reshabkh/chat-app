@@ -5,33 +5,32 @@
 <head>
 
 <meta charset="utf-8">
+<link rel = "stylesheet" href="/css/style.css">
 
 </head>
 
-<body>
+<body class = "chat">
 
-  <p>Welcome to chart app</p>
-  <ol id = "messages"></ol>
-  <form id = "message-form">
-    <input name ="message" type="text" placeholder = "Message"/>
-    <button>Send</button>
+  <div class = "chat__sidebar">
+    <h3>people</h3>
+    <div id = "users"></div>
+  </div>
 
-  </form>
+  <div class = "chat__main">
+    <ol id = "messages" class="chat_message"></ol>
+    <div class = "chat__footer">
+      <form id = "message-form">
+        <input name ="message" type="text" placeholder = "Message"/>
+        <button>Send</button>
 
-  <button id = "send-location">Send location</button>
+      </form>
 
+      <button id = "send-location">Send location</button>
+    </div>
+</div>
   <script src ="/socket.io/socket.io.js"></script>
   <script src ="/js/libs/jquery-3.2.1.min.js"></script>
   <script src = "/js/index.js"></script>
   <script src ="/js/libs/jquery-3.2.1.min.js"></script>
-
-
-
-
 </body>
-
-
-
-
-
 </html>
